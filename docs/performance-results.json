@@ -1,0 +1,59 @@
+{
+  "note": "Local production build with demonstration content; rerun on the final domain and real content. Demo robots/noindex intentionally reduce SEO score.",
+  "results": [
+    {
+      "page": "/",
+      "measuredAt": "2026-10-03T18:42:36.195Z",
+      "mobile": true,
+      "scores": {
+        "performance": 95,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 69
+      },
+      "lcp": "2.9 s"
+    },
+    {
+      "page": "/dokter",
+      "measuredAt": "2026-10-03T18:42:47.246Z",
+      "mobile": true,
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 66
+      },
+      "lcp": "1.9 s"
+    },
+    {
+      "page": "/booking",
+      "measuredAt": "2026-10-03T18:38:09.720Z",
+      "mobile": true,
+      "scores": {
+        "performance": 100,
+        "accessibility": 100
+      },
+      "lcp": "1.9 s"
+    },
+    {
+      "page": "/blog/persiapan-kunjungan",
+      "measuredAt": "2026-10-03T18:38:20.278Z",
+      "mobile": true,
+      "scores": {
+        "performance": 100,
+        "accessibility": 100
+      },
+      "lcp": "1.9 s"
+    },
+    {
+      "page": "/lokasi/jakarta",
+      "measuredAt": "2026-10-03T18:38:30.844Z",
+      "mobile": true,
+      "scores": {
+        "performance": 100,
+        "accessibility": 100
+      },
+      "lcp": "1.9 s"
+    }
+  ]
+}

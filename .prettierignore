@@ -1,0 +1,7 @@
+src/migrations/
+src/payload-types.ts
+src/app/(payload)/admin/importMap.js
+.local/
+.next/
+node_modules/
+package-lock.json

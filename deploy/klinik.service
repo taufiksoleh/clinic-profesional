@@ -1,0 +1,18 @@
+[Unit]
+Description=Website Klinik
+After=network.target postgresql.service
+
+[Service]
+Type=simple
+User=klinik
+WorkingDirectory=/opt/klinik
+EnvironmentFile=/opt/klinik/.env
+Environment=NODE_ENV=production
+ExecStart=/usr/bin/npm start
+Restart=on-failure
+RestartSec=5
+NoNewPrivileges=true
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target

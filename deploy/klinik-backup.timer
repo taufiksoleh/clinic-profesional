@@ -1,0 +1,10 @@
+[Unit]
+Description=Daily clinic backup at 02:00 server time
+
+[Timer]
+OnCalendar=*-*-* 02:00:00
+Persistent=true
+Unit=klinik-backup.service
+
+[Install]
+WantedBy=timers.target

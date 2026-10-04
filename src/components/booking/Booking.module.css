@@ -1,0 +1,179 @@
+.booking-page {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 45px;
+}
+.booking-form {
+  border: 1px solid var(--line);
+  padding: 32px;
+  border-radius: var(--radius);
+  background: #fff;
+}
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+}
+.fee {
+  display: flex;
+  flex-direction: column;
+  background: var(--pale);
+  border-radius: 8px;
+  padding: 12px 16px;
+}
+.fee span,
+.fee small {
+  font-size: 0.8rem;
+}
+.fee strong {
+  font-size: 1.3rem;
+  color: var(--blue);
+}
+.checkbox {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  font-weight: 400;
+  margin: 24px 0;
+  font-size: 0.85rem;
+  gap: 10px;
+}
+.checkbox input {
+  min-height: 20px;
+  width: 20px;
+  flex-shrink: 0;
+  margin: 4px 0;
+}
+.checkbox a {
+  text-decoration: underline;
+}
+.form-error {
+  background: #fff0ed;
+  color: #a0271a;
+  padding: 12px;
+  margin: 18px 0;
+  border-radius: 8px;
+}
+.honeypot {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.aside-blue {
+  padding: 30px;
+  background: var(--pale);
+  border-radius: var(--radius);
+  align-self: start;
+}
+.aside-blue svg {
+  color: var(--blue);
+  margin-bottom: 24px;
+}
+.aside-blue h2 {
+  font-size: 2rem;
+}
+.aside-blue ol {
+  padding-left: 20px;
+  line-height: 1.9;
+  margin: 24px 0;
+}
+.aside-blue p {
+  font-size: 0.85rem;
+}
+.booking-success {
+  padding: 50px;
+  background: var(--pale);
+  border-radius: var(--radius);
+}
+.booking-success p {
+  margin: 24px 0;
+}
+@media (max-width: 1100px) {
+  .booking-page {
+    grid-template-columns: 1fr 280px;
+    gap: 24px;
+  }
+}
+@media (max-width: 800px) {
+  .booking-page {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 520px) {
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+  .booking-form {
+    padding: 22px;
+  }
+}
+.booking-widget {
+  position: fixed;
+  right: 24px;
+  bottom: 40px;
+  display: flex;
+  gap: 8px;
+  z-index: 18;
+  filter: drop-shadow(0 4px 15px #142d4e25);
+}
+.booking-widget .whatsapp {
+  background: #136d4c;
+  border-color: #136d4c;
+}
+.booking-dialog {
+  border: 0;
+  border-radius: 18px;
+  padding: 0;
+  width: min(780px, calc(100% - 28px));
+  max-height: 90vh;
+  color: var(--navy);
+  box-shadow: 0 15px 80px #0003;
+}
+.booking-dialog::backdrop {
+  background: #10254199;
+}
+.dialog-heading {
+  padding: 24px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.dialog-heading h2 {
+  font-size: 1.7rem;
+}
+.dialog-heading button {
+  border: 0;
+  background: var(--pale);
+  color: var(--navy);
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+}
+.booking-dialog .booking-form {
+  border: 0;
+  border-radius: 0;
+}
+.booking-dialog .booking-success {
+  border-radius: 0;
+}
+.booking-dialog[open] {
+  display: block;
+}
+@media (max-width: 520px) {
+  .booking-widget {
+    right: 16px;
+    bottom: 36px;
+  }
+  .booking-widget :global(.button) {
+    padding: 11px 14px;
+    font-size: 0.85rem;
+  }
+  .dialog-heading {
+    padding: 22px;
+  }
+}
